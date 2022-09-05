@@ -31,7 +31,7 @@ export default {
   // Nuxt Images
   image: {
     // Generate images to `/_nuxt/image/file.png`
-    staticFilename: '[publicPath]/images/[name][ext]'
+    staticFilename: '[publicPath]/images/[name]-[hash][ext]'
   },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
