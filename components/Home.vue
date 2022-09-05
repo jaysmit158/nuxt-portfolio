@@ -5,7 +5,31 @@
         <h1 class="text-center text-4xl pt-8 pb-8">Who Am I?</h1>
         <div class="md:flex">
           <div class="flex-none w-full md:w-2/5">
-            <img class="profile rounded-md" src="~/assets/me.jpg" alt="Jordan Smith" title="Jordan S" width="225" height="275">
+            <!-- <img class="profile rounded-md" src="~/assets/me.jpg" alt="Jordan Smith" title="Jordan S" width="225" height="275"> -->
+            <nuxt-img 
+              class="profile rounded-md" 
+              format="webp" 
+              quality="90" 
+              src="~/assets/me.jpg" 
+              height="275" 
+              width="225" 
+            ></nuxt-img>
+            <nuxt-img 
+              class="profile rounded-md" 
+              format="webp" 
+              quality="90" 
+              src="/me.jpg" 
+              height="275" 
+              width="225" 
+            ></nuxt-img>
+            <nuxt-img 
+              class="profile rounded-md" 
+              format="webp" 
+              quality="90" 
+              src="me.jpg" 
+              height="275" 
+              width="225" 
+             ></nuxt-img>
           </div>
           <div class="flex-none md:w-3/5 text-xl m-8 md:m-0">
             <p class="mb-4"> Hello, My name is Jordan Smith.</p>
