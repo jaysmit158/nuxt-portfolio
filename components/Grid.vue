@@ -1,11 +1,10 @@
 <template>
-  <section style="max-width:1200px;margin:auto;" class="p-8">
+  <section class="p-8 m-auto max-w-screen-xl">
     <div class="grid grid-cols-1 md:grid-cols-4 place-content-evenly gap-8">
       <div
-        style="width:100%;"
         :key="item.title"
         v-for="item in items"
-        class="shadow-lg box bg-white border-solid border border-teal-800 border-2"
+        class="shadow-lg w-full box bg-white border-solid border border-teal-800 border-2"
       >
         <a :href="item.href" target="_blank">
           <img v-if="item.img" :src="item.img" />
