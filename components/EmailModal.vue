@@ -1,5 +1,6 @@
 <template>
     <div class="emailModal">
+        <input type="email" />
         
     </div>
 </template>
