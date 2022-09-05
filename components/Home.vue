@@ -10,7 +10,7 @@
               alt="Jordan Smith"
               title="Jordan S"
               src="/img/me.jpg" 
-              height="275" 
+              height="325" 
               width="225" 
             />
           </div>
