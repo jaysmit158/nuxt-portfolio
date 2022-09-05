@@ -26,7 +26,7 @@ export default {
   data() {
     return {
       items: [
-        { type: 'certification', title: 'AWS Cloud Practitioner', id: 'SK3P1BQKYJB4Q2SS', href: 'https://aws.amazon.com/verification', img:'/aws-certified-cloud-practitioner.png'},
+        { type: 'certification', title: 'AWS Cloud Practitioner', id: 'SK3P1BQKYJB4Q2SS', href: 'https://aws.amazon.com/verification', img:'aws-certified-cloud-practitioner.png'},
         { type: 'web_app', title: 'Bond Search Tool', href: 'https://www.interactivebrokers.com/en/index.php?f=45559#/'},
         { type: 'web_app', title: 'Global Analyst Seach Tool', href: 'https://www.interactivebrokers.com/en/index.php?f=49843#/'},
         { type: 'web_app', title: 'Mutual Fund Search Tool', href: 'https://www.interactivebrokers.com/en/index.php?f=46321#/'},
