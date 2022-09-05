@@ -8,14 +8,12 @@
             <img class="profile rounded-md" src="/img/me.jpg" alt="Jordan Smith" title="Jordan S" width="225" height="275">
             <nuxt-img 
               class="profile rounded-md" 
-              format="webp" 
-              quality="90" 
               alt="Jordan Smith"
               title="Jordan S"
               src="/img/me.jpg" 
               height="275" 
               width="225" 
-            ></nuxt-img>
+            />
           </div>
           <div class="flex-none md:w-3/5 text-xl m-8 md:m-0">
             <p class="mb-4"> Hello, My name is Jordan Smith.</p>
