@@ -10,7 +10,7 @@
               class="profile rounded-md" 
               format="webp" 
               quality="90" 
-              src="/me.jpg" 
+              src="~/assets/me.jpg" 
               height="275" 
               width="225" 
             />
