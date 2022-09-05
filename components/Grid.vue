@@ -7,7 +7,7 @@
         class="shadow-lg w-full box bg-white border-solid border border-teal-800 border-2"
       >
         <a :href="item.href" target="_blank">
-          <img v-if="item.img" :src="require(`~/assets${item.img}`)" />
+          <img v-if="item.img" :src="require(`~/assets/${item.img}`)" />
           
           <img v-else-if="!item.img && item.type=='web_app'" src="~/assets/web-app.jpeg" />
           <h4>{{ item.title }}</h4>
@@ -32,16 +32,16 @@ export default {
         { type: 'web_app', title: 'Mutual Fund Search Tool', href: 'https://www.interactivebrokers.com/en/index.php?f=46321#/'},
         { type: 'web_app', title: 'EUIBSI Bid/Ask Tool', href: 'https://www.interactivebrokers.ie/en/index.php?f=53691'},
         { type: 'web_app', title: 'Stock Margin Calculator', href: 'https://www.interactivebrokers.com/en/trading/margin-calculator.php'},
-        { type: 'web_app', title: 'Stock Price Widget', href: 'https://www.interactivebrokers.com/stockpricequote/', img: '/stockpricequote.jpeg'},
-        { type: 'website', title: 'Nagi Jewelers', href: 'https://nagijewelers.com/', img: '/nagi_jewelers.jpeg'},
-        { type: 'website', title: 'Vanity Studio LLC', href: 'https://www.vanitystudiollc.com/', img: '/vanitystudiollc.jpeg'},
-        { type: 'website', title: 'Pipsqueaks', href: 'https://shoppipsqueaks.com/', img: '/shoppips.jpeg'},
-        { type: 'website', title: 'House of Sussie', href: 'https://houseofsussie.com/', img: '/houseofsussie.jpeg'},
-        { type: 'website', title: 'Hubbell Water Rentals', href: 'https://rentawaterheater.com/', img: '/rentawaterheater.jpeg'},
-        { type: 'website', title: 'Beaut Outerwear', href: 'https://beautouterwear.com/', img: '/beautouterwear.jpeg'},
-        { type: 'website', title: 'McMedCPR', href: 'https://www.mcmedcpr.com/', img: '/mcmedcpr.jpeg'},
+        { type: 'web_app', title: 'Stock Price Widget', href: 'https://www.interactivebrokers.com/stockpricequote/', img: 'stockpricequote.jpeg'},
+        { type: 'website', title: 'Nagi Jewelers', href: 'https://nagijewelers.com/', img: 'nagi_jewelers.jpeg'},
+        { type: 'website', title: 'Vanity Studio LLC', href: 'https://www.vanitystudiollc.com/', img: 'vanitystudiollc.jpeg'},
+        { type: 'website', title: 'Pipsqueaks', href: 'https://shoppipsqueaks.com/', img: 'shoppips.jpeg'},
+        { type: 'website', title: 'House of Sussie', href: 'https://houseofsussie.com/', img: 'houseofsussie.jpeg'},
+        { type: 'website', title: 'Hubbell Water Rentals', href: 'https://rentawaterheater.com/', img: 'rentawaterheater.jpeg'},
+        { type: 'website', title: 'Beaut Outerwear', href: 'https://beautouterwear.com/', img: 'beautouterwear.jpeg'},
+        { type: 'website', title: 'McMedCPR', href: 'https://www.mcmedcpr.com/', img: 'mcmedcpr.jpeg'},
         { type: 'website', title: 'Booster Heater', href: 'https://boosterheater.com/', img:'boosterheater.jpeg'},
-        { type: 'website', title: 'Ace Heaters', href: 'https://aceheaters.com/', img: '/aceheaters.jpeg'}
+        { type: 'website', title: 'Ace Heaters', href: 'https://aceheaters.com/', img: 'aceheaters.jpeg'}
         
       ]
     }
