@@ -28,6 +28,8 @@ export default {
     './plugins/fontawesome.js'
   ],
 
+  image: {},
+  
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
@@ -35,6 +37,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxt/postcss8',
+    '@nuxt/image',
     
   ],
 
@@ -50,6 +53,6 @@ export default {
         tailwindcss: {},
         autoprefixer: {},
       }
-    }
+    },
   }
 }
