@@ -5,14 +5,14 @@
         <h1 class="text-center text-4xl pt-8 pb-8">Who Am I?</h1>
         <div class="md:flex">
           <div class="flex-none w-full md:w-2/5">
-            <img class="profile rounded-md" src="/me.jpg" alt="Jordan Smith" title="Jordan S" width="225" height="275">
+            <img class="profile rounded-md" src="/img/me.jpg" alt="Jordan Smith" title="Jordan S" width="225" height="275">
             <nuxt-img 
               class="profile rounded-md" 
               format="webp" 
               quality="90" 
               alt="Jordan Smith"
               title="Jordan S"
-              src="/me.jpg" 
+              src="/img/me.jpg" 
               height="275" 
               width="225" 
             ></nuxt-img>

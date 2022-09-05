@@ -28,7 +28,11 @@ export default {
     './plugins/fontawesome.js'
   ],
 
-  image: {},
+  // Nuxt Images
+  image: {
+    // Generate images to `/_nuxt/image/file.png`
+    staticFilename: '[publicPath]/images/[name]-[hash][ext]'
+  },
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
