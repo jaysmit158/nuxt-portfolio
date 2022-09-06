@@ -42,7 +42,6 @@ export default {
         { type: 'website', title: 'McMedCPR', href: 'https://www.mcmedcpr.com/', img: 'mcmedcpr.jpeg'},
         { type: 'website', title: 'Booster Heater', href: 'https://boosterheater.com/', img:'boosterheater.jpeg'},
         { type: 'website', title: 'Ace Heaters', href: 'https://aceheaters.com/', img: 'aceheaters.jpeg'}
-        
       ]
     }
   },

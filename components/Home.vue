@@ -21,13 +21,14 @@
             <p class="my-4">Currently, I am getting more familiar with cloud platform services and working on getting more AWS Certifications. I am also improving my skills with Nuxt on top of Vue, and learning a little Python along the way as well as a third language.</p>
             <p>When I am not working on apps I also build and maintain static and E-commerce websites (Shopify, Woocommerce).</p>
             <div class="pt-4 pb-8 sm:text-center md:text-left">
-              <button @click="getModal">
+              <button @click="getModal" aria-label="Send Me an Email">
                 <font-awesome-icon 
                   class="text-5xl pr-4 text-teal-800" 
-                  icon="fa-solid fa-envelope" 
+                  icon="fa-solid fa-envelope"
                 />
               </button>
-              <a 
+              <a
+                aria-label="Connect with me on Linked In"
                 href="https://www.linkedin.com/in/jordan-smith-b1068483/"
                 target="_blank"
               >
@@ -36,7 +37,8 @@
                   icon="fa-brands fa-linkedin" 
                 /> 
               </a> 
-              <a 
+              <a
+                aria-label="View My Github Page"
                 href="https://github.com/jaysmit158"
                 target="_blank"
               >
@@ -50,7 +52,7 @@
         </div>
       </div>
     </div>
-    <EmailModal/>
+    <EmailModal :show="show" @close="closeModal"/>
   </section>
 </template>
 
@@ -59,12 +61,15 @@ export default {
   name: 'Home',
   data() {
     return {
-      
+      show: false
     }
   },
   methods: {
     getModal() {
-
+      this.show = !this.show;
+    },
+    closeModal() {
+      this.show = false;
     }
   }
 }
