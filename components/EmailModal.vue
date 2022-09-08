@@ -18,8 +18,8 @@
 				class="bg-white p-4 rounded"
 			>
 				<div class="mb-2">
-					<label for="name" class="w-full">Your Name:</label>
-					<input id="name" class="w-full border border-teal-800" name="name" type="text" placeholder=" Your Name..." />
+					<label for="eName" class="w-full">Your Name:</label>
+					<input id="eName" class="w-full border border-teal-800" name="name" type="text" placeholder=" Your Name..." />
 				</div>
 				<div class="mb-2">
 					<label for="eAddress" class="w-full">Email:</label>
