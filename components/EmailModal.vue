@@ -44,6 +44,9 @@
 			<form 
 				id="emailForm" 
 				name="Contact Me - FFE Portfolio" 
+				method="POST" 
+				data-netlify="true"
+				data-netlify-recaptcha="true"
 				data-netlify-honeypot="bot-field"
 				class="bg-white"
 			>
