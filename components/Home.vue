@@ -73,6 +73,10 @@ export default {
       this.show = false;
       console.log("a", this.show)
     }
+  },
+
+  mounted() {
+    this.show = false;
   }
 }
 </script>
