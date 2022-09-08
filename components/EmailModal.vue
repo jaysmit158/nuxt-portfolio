@@ -41,7 +41,7 @@
 				<div data-netlify-recaptcha="true" class="recap-block m-2"></div>
 				<button type="submit" class="bg-teal-800 mt-4 text-white w-full p-1">Submit</button>
 			</form> -->
-			<form 
+			<!-- <form 
 				id="emailForm" 
 				name="Contact Me - FFE Portfolio" 
 				method="POST" 
@@ -66,7 +66,21 @@
 					></textarea>
 				</div>
 				<button type="submit" class="bg-teal-800 text-white w-full">Submit</button>
-			</form>
+			</form> -->
+			<form name="contact" method="POST" data-netlify="true">
+				<p>
+					<label>Your Name: <input type="text" name="name" /></label>
+				</p>
+				<p>
+					<label>Your Email: <input type="email" name="email" /></label>
+				</p>
+				<p>
+					<label>Message: <textarea name="message"></textarea></label>
+				</p>
+				<p>
+					<button type="submit">Send</button>
+				</p>
+				</form>
 		</div>
 	</dialog>
 </template>
