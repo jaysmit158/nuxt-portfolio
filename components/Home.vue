@@ -52,7 +52,7 @@
         </div>
       </div>
     </div>
-    <EmailModal :show="show" @close="closeModal"/>
+    <EmailModal :show="show" @close="closeModal" />
   </section>
 </template>
 
@@ -69,7 +69,9 @@ export default {
       this.show = !this.show;
     },
     closeModal() {
+      console.log("b", this.show)
       this.show = false;
+      console.log("a", this.show)
     }
   }
 }

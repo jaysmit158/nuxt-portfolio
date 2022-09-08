@@ -63,6 +63,25 @@ export default {
 	close() {
 		this.$emit('close');
 	}
+  },
+  watch: {
+	nameVal: {
+		handler: function() {
+			console.log("nameVal", this.nameVal)
+		}
+	},
+	emailVal: {
+		handler: function() {
+			console.log("emailVal", this.emailVal)
+		}
+	},
+	messageVal: {
+		handler: function() {
+			console.log("messageVal", this.messageVal)
+		}
+	}
+
+
   }
 }
 </script>
