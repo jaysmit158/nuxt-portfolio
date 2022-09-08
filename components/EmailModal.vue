@@ -52,11 +52,11 @@
 			>
 				<div class="flex">
 					<label for="name" class="flex-auto">Your Name</label>
-					<input id="name" class="flex-auto border border-teal-800" name="name" type="text" required />
+					<input id="name" class="flex-auto border border-teal-800" name="name" type="text"  />
 				</div>
 				<div class="flex">
 					<label for="eAddress">Email</label>
-					<input id="eAddress" name="email" class="flex-auto border border-teal-800" type="email" required />
+					<input id="eAddress" name="email" class="flex-auto border border-teal-800" type="email" />
 				</div>
 				<label for="message">Your Message</label>
 				<div class="hidden">
@@ -68,7 +68,6 @@
 						name="message" 
 						rows="4" 
 						class="flex-auto border border-teal-800" 
-						required
 					></textarea>
 				</div>
 				<div data-netlify-recaptcha="true" class="recap-block"></div>
