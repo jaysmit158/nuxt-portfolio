@@ -52,7 +52,7 @@
         </div>
       </div>
     </div>
-    <EmailModal :show="show" @close="closeModal" />
+    <EmailModal :show="show" @close="closeModal" v-show="show === true"/>
   </section>
 </template>
 
