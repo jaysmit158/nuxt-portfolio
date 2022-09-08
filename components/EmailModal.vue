@@ -2,11 +2,11 @@
   <dialog 
 		id="contactModal" 
 		:open="show === true ? true : false"
-		class="top-0 left-0 w-full h-full absolute bg-slate-100/75"
+		class="top-0 left-0 w-full h-full fixed bg-slate-100/75 z50"
 		@click.self="$emit('close', false)"
 	>
-		<div class="formWrapper">
-			<button class="float-right" @click="close"> Close &times; </button>
+		<div class="formWrapper absolute">
+			<button class="float-right font-bold green text-2xl" @click="close"> Close &times; </button>
 			<div class="clear-both"></div>
 			<form 
 				id="emailForm" 
@@ -15,31 +15,32 @@
 				data-netlify="true"
 				data-netlify-recaptcha="true"
 				data-netlify-honeypot="bot-field"
-				class="bg-white"
+				class="bg-white p-4 rounded"
 			>
-				<div class="flex">
-					<label for="name" class="flex-auto">Your Name</label>
-					<input id="name" class="flex-auto border border-teal-800" name="name" type="text" required />
+				<div class="mb-2">
+					<label for="name" class="w-full">Your Name:</label>
+					<input id="name" class="w-full border border-teal-800" name="name" type="text" placeholder=" Your Name..." required />
 				</div>
-				<div class="flex">
-					<label for="eAddress">Email</label>
-					<input id="eAddress" name="email" class="flex-auto border border-teal-800" type="email" required />
+				<div class="mb-2">
+					<label for="eAddress" class="w-full">Email:</label>
+					<input id="eAddress" name="email" class="w-full border border-teal-800" type="email" placeholder=" Your Email..." required />
 				</div>
-				<label for="message">Your Message</label>
-				<div class="hidden">
-					<input name="bot-field" />
-				</div>
-				<div class="flex">
+				<div>
+					<label for="message" class="w-full">Your Message:</label>
 					<textarea 
 						id="message" 
 						name="message" 
 						rows="4" 
-						class="flex-auto border border-teal-800" 
+						class="w-full border border-teal-800"
+						placeholder=" Your Message..." 
 						required
 					></textarea>
 				</div>
-				<div data-netlify-recaptcha="true" class="recap-block"></div>
-				<button type="submit" class="bg-teal-800 text-white w-full">Submit</button>
+				<div class="hidden">
+					<input name="bot-field" />
+				</div>
+				<div data-netlify-recaptcha="true" class="recap-block m-2"></div>
+				<button type="submit" class="bg-teal-800 mt-4 text-white w-full p-1">Submit</button>
 			</form>
 		</div>
 	</dialog>
@@ -67,11 +68,13 @@ export default {
 }
 </script>
 <style>
+	.green {
+		color: #125d59;
+	}
 	.formWrapper {
-		position: absolute;
 		left: 50%;
 		top: 50%;
-		max-width: 300px;
+		max-width: 450px;
 		width: 95%;
 		transform: translate(-50%, -50%);
 	}
