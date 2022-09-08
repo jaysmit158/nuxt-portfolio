@@ -1,5 +1,5 @@
 <template>
-  <section class="main">
+  <section class="main" @keyup.esc="closeModal">
     <div class="about">
       <div class="container mx-auto">
         <h1 class="text-center text-4xl pt-8 pb-8">Who Am I?</h1>
