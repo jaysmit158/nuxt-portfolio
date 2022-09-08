@@ -87,7 +87,7 @@ export default {
 	},
   data() {
     return {
-		noo: '',''
+		noo: '',
     }
   },
   methods: {
