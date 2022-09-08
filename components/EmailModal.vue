@@ -46,8 +46,6 @@
 				name="Contact Me - FFE Portfolio" 
 				method="POST" 
 				data-netlify="true"
-				data-netlify-recaptcha="true"
-				data-netlify-honeypot="bot-field"
 				class="bg-white"
 			>
 				<div class="flex">
@@ -59,9 +57,6 @@
 					<input id="eAddress" name="email" class="flex-auto border border-teal-800" type="email" />
 				</div>
 				<label for="message">Your Message</label>
-				<div class="hidden">
-					<input name="bot-field" />
-				</div>
 				<div class="flex">
 					<textarea 
 						id="message" 
@@ -70,7 +65,6 @@
 						class="flex-auto border border-teal-800" 
 					></textarea>
 				</div>
-				<div data-netlify-recaptcha="true" class="recap-block"></div>
 				<button type="submit" class="bg-teal-800 text-white w-full">Submit</button>
 			</form>
 		</div>
