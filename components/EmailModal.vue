@@ -3,7 +3,7 @@
 		id="contactModal" 
 		:open="show === true ? true : false"
 		class="top-0 left-0 w-full h-full fixed bg-slate-100/75 z50"
-		@click.self="$emit('close')"
+		@click.self="close"
 	>
 		<div class="formWrapper absolute">
 			<button class="float-right font-bold green text-2xl" @click="close"> Close &times; </button>
@@ -19,11 +19,11 @@
 			>
 				<div class="mb-2">
 					<label for="eName" class="w-full">Your Name:</label>
-					<input id="eName" class="w-full border border-teal-800" name="name" type="text" placeholder="Your Name..." />
+					<input id="eName" class="w-full border border-teal-800" name="name" type="text" placeholder="Your Name..." v-model="nameVal" />
 				</div>
 				<div class="mb-2">
 					<label for="eAddress" class="w-full">Email:</label>
-					<input id="eAddress" name="email" class="w-full border border-teal-800" type="email" placeholder="Your Email..." />
+					<input id="eAddress" name="email" class="w-full border border-teal-800" type="email" placeholder="Your Email..." v-model="emailVal" />
 				</div>
 				<div>
 					<label for="message" class="w-full">Your Message:</label>
@@ -33,6 +33,7 @@
 						rows="4" 
 						class="w-full border border-teal-800"
 						placeholder="Your Message..." 
+						v-model="messageVal"
 					></textarea>
 				</div>
 				<div class="hidden">
@@ -53,7 +54,9 @@ export default {
 	},
   data() {
     return {
-		noo: '',
+		nameVal: '',
+		emailVal: '',
+		messageVal: ''
     }
   },
   methods: {
