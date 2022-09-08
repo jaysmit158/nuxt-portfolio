@@ -53,12 +53,12 @@ export default {
 }
 </script>
 <style>
-.box {
-  transition: transform .2s; /* Animation */
-  min-height:auto;
-}
+  .box {
+    transition: transform .2s; /* Animation */
+    min-height:auto;
+  }
 
-.box:hover {
-  transform: scale(1.1); 
-}
+  .box:hover {
+    transform: scale(1.1); 
+  }
 </style>

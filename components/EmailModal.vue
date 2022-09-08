@@ -3,7 +3,7 @@
 		id="contactModal" 
 		:open="show === true ? true : false"
 		class="top-0 left-0 w-full h-full fixed bg-slate-100/75 z50"
-		@click.self="$emit('close', false)"
+		@click.self="$emit('close')"
 	>
 		<div class="formWrapper absolute">
 			<button class="float-right font-bold green text-2xl" @click="close"> Close &times; </button>
@@ -57,13 +57,9 @@ export default {
     }
   },
   methods: {
-		close() {
-			this.show = false;
-			this.$emit('close', this.show);
-		},
-    getModal() {
-      this.show = true;
-    }
+	close() {
+		this.$emit('close');
+	}
   }
 }
 </script>
