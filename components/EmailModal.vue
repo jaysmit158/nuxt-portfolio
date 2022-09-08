@@ -19,11 +19,11 @@
 			>
 				<div class="mb-2">
 					<label for="name" class="w-full">Your Name:</label>
-					<input id="name" class="w-full border border-teal-800" name="name" type="text" placeholder=" Your Name..." required />
+					<input id="name" class="w-full border border-teal-800" name="name" type="text" placeholder=" Your Name..." />
 				</div>
 				<div class="mb-2">
 					<label for="eAddress" class="w-full">Email:</label>
-					<input id="eAddress" name="email" class="w-full border border-teal-800" type="email" placeholder=" Your Email..." required />
+					<input id="eAddress" name="email" class="w-full border border-teal-800" type="email" placeholder=" Your Email..." />
 				</div>
 				<div>
 					<label for="message" class="w-full">Your Message:</label>
@@ -33,7 +33,6 @@
 						rows="4" 
 						class="w-full border border-teal-800"
 						placeholder=" Your Message..." 
-						required
 					></textarea>
 				</div>
 				<div class="hidden">
