@@ -13,6 +13,8 @@
 				name="Contact Me - FFE Portfolio" 
 				method="POST" 
 				data-netlify="true"
+				data-netlify-recaptcha="true"
+				data-netlify-honeypot="bot-field"
 				class="bg-white p-4 rounded"
 			>
 				<div class="mb-2">
@@ -34,6 +36,10 @@
 						v-model="messageVal"
 					></textarea>
 				</div>
+				<div class="hidden">
+					<input name="bot-field" />
+				</div>
+				<div data-netlify-recaptcha="true" class="recap-block m-2"></div>
 				<button type="submit" class="bg-teal-800 mt-4 text-white w-full p-1">Submit</button>
 			</form> 
 		</div>
