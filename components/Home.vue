@@ -66,6 +66,7 @@ export default {
   },
   methods: {
     getModal() {
+      console.debug(this.show)
       this.show = !this.show;
     },
     closeModal() {
