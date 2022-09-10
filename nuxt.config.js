@@ -58,5 +58,9 @@ export default {
         autoprefixer: {},
       }
     },
+  },
+
+  generate: {
+    fallback: true
   }
 }
