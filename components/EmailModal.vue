@@ -1,7 +1,7 @@
 <template>
-  <dialog 
+  <div
 		id="contactModal" 
-		:open="show === true ? true : false"
+		v-show="show === true"
 		class="top-0 left-0 w-full h-full fixed bg-slate-100/75 z50"
 		@click.self="close"
 	>
@@ -43,7 +43,7 @@
 				<button type="submit" class="bg-teal-800 mt-4 text-white w-full p-1">Submit</button>
 			</form> 
 		</div>
-	</dialog>
+	</div>
 </template>
 
 <script>
