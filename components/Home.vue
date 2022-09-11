@@ -52,7 +52,7 @@
         </div>
       </div>
     </div>
-    <EmailModal :show="show" @close="closeModal" />
+    <EmailModal v-show="show" @close="closeModal" />
   </section>
 </template>
 
@@ -66,18 +66,15 @@ export default {
   },
   methods: {
     getModal() {
-      console.debug(this.show)
-      this.show = !this.show;
+      this.show = true;
     },
     closeModal() {
-      console.log("b", this.show)
       this.show = false;
-      console.log("a", this.show)
     }
   },
 
   mounted() {
-    this.show = false;
+    //this.show = false;
   }
 }
 </script>

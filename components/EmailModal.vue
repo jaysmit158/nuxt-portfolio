@@ -1,7 +1,6 @@
 <template>
   <div
 		id="contactModal" 
-		v-show="show === true"
 		class="top-0 left-0 w-full h-full fixed bg-slate-100/75 z50"
 		@click.self="close"
 	>
@@ -49,9 +48,6 @@
 <script>
 export default {
   name: 'Home',
-  props: {
-		show: Boolean
-	},
   data() {
     return {
 		nameVal: '',
@@ -61,27 +57,11 @@ export default {
   },
   methods: {
 	close() {
+		console.log("close")
 		this.$emit('close');
 	}
   },
   watch: {
-	nameVal: {
-		handler: function() {
-			console.log("nameVal", this.nameVal)
-		}
-	},
-	emailVal: {
-		handler: function() {
-			console.log("emailVal", this.emailVal)
-		}
-	},
-	messageVal: {
-		handler: function() {
-			console.log("messageVal", this.messageVal)
-		}
-	}
-
-
   }
 }
 </script>
