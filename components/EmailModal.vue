@@ -7,7 +7,7 @@
 		<div class="formWrapper absolute">
 			<button class="float-right font-bold green text-2xl" @click="close"> Close &times; </button>
 			<div class="clear-both"></div>
-			<clent-only>
+			<client-only>
 				<form 
 					id="emailForm" 
 					name="Contact Me - FFE Portfolio" 
