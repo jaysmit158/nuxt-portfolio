@@ -13,14 +13,6 @@
               height="325" 
               width="225" 
             />
-            <!-- <img 
-              class="profile rounded-md" 
-              src="/img/me.jpg" 
-              width="225" 
-              height="325" 
-              alt="Jordan Smith" 
-              title="Jordan S" 
-            /> -->
           </div>
           <div class="flex-none md:w-3/5 text-xl m-8 md:m-0">
             <p class="mb-4"> Hello, My name is Jordan Smith.</p>
