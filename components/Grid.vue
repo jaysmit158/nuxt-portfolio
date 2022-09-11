@@ -7,8 +7,8 @@
         class="shadow-lg w-full box bg-white border-solid border border-teal-800 border-2"
       >
         <a :href="item.href" target="_blank">
-          <img v-show="item.img" :src="`/img/${item.img}`" />
-          <img v-show="!item.img && item.type=='web_app'" src="/img/web-app.jpeg" />
+          <img v-if="item.img" :src="`/img/${item.img}`" />
+          <img v-if="!item.img && item.type=='web_app'" src="/img/web-app.jpeg" />
           <h4>{{ item.title }}</h4>
           <h4 v-if="item.type" class="capitalize">Project Type: {{ convert(item.type) }}</h4>
           <h4 v-if="item.id" class="capitalize"> Verification Id: {{ item.id }}</h4>

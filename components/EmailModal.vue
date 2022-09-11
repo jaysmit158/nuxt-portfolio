@@ -7,7 +7,6 @@
 		<div class="formWrapper absolute">
 			<button class="float-right font-bold green text-2xl" @click="close"> Close &times; </button>
 			<div class="clear-both"></div>
-			<client-only>
 				<form 
 					id="emailForm" 
 					name="Contact Me - FFE Portfolio" 
@@ -42,7 +41,6 @@
 					<div data-netlify-recaptcha="true" class="recap-block m-2"></div>
 					<button type="submit" class="bg-teal-800 mt-4 text-white w-full p-1">Submit</button>
 				</form> 
-			</client-only>
 		</div>
 	</div>
 </template>
