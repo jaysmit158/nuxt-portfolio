@@ -9,6 +9,7 @@
         <a :href="item.href" target="_blank">
           <img 
             v-if="item.img" 
+            :class="{'setPixel': item.type === 'certification'}"
             :src="`/img/${item.img}`"  
             :width="item.type === 'certification' ? '150' : '100%'"
             :alt="item.title"
@@ -68,8 +69,10 @@ export default {
     transition: transform .2s; /* Animation */
     min-height:auto;
   }
-
   .box:hover {
     transform: scale(1.1); 
+  }
+  .setPixel {
+    margin: auto;
   }
 </style>
