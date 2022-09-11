@@ -22,7 +22,7 @@
             <p>When I am not working on apps I also build and maintain static and E-commerce websites (Shopify, Woocommerce).</p>
             <div class="pt-4 pb-8 sm:text-center md:text-left">
               <!--<button @click="getModal" aria-label="Send Me an Email">-->
-              <a href="mailto:jaysmit158@gmail.com"
+              <a href="mailto:jaysmit158@gmail.com">
                 <font-awesome-icon 
                   class="text-5xl pr-4 text-teal-800" 
                   icon="fa-solid fa-envelope"
