@@ -12,6 +12,7 @@
             :src="`/img/${item.img}`"
             :alt="item.title"
             :title="item.title"
+            :class="{'setpixel': item.type === 'certification'}"
             :width="item.type === 'certification' ? '150' : '100%'"
           />
           <nuxt-img 
@@ -67,8 +68,10 @@ export default {
     transition: transform .2s; /* Animation */
     min-height:auto;
   }
-
   .box:hover {
     transform: scale(1.1); 
+  }
+  .setpixel {
+    margin: auto;
   }
 </style>
