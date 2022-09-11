@@ -1,5 +1,5 @@
 <template>
-  <section class="p-8 m-auto max-w-screen-xl">
+  <section class="p-8 m-auto max-w-screen-xl font-sans">
     <div class="grid grid-cols-1 md:grid-cols-4 place-content-evenly gap-8">
       <div
         :key="item.title"
@@ -22,9 +22,9 @@
             :alt="item.title"
             :title="item.title"
           />
-          <h4>{{ item.title }}</h4>
-          <h4 v-if="item.type" class="capitalize">Project Type: {{ convert(item.type) }}</h4>
-          <h4 v-if="item.id" class="capitalize"> Verification Id: {{ item.id }}</h4>
+          <h4 class="px-1">{{ item.title }}</h4>
+          <h4 v-if="item.type" class="capitalize px-1">Project Type: {{ convert(item.type) }}</h4>
+          <h4 v-if="item.id" class="capitalize px-1"> Verification Id: {{ item.id }}</h4>
         </a>
       </div>
     </div>
@@ -68,6 +68,7 @@ export default {
   .box {
     transition: transform .2s; /* Animation */
     min-height:auto;
+    background: rgb(128 128 128 / 12%);
   }
   .box:hover {
     transform: scale(1.1); 

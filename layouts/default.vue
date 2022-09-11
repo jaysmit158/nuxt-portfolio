@@ -1,6 +1,6 @@
 
 <template>
-    <div class="body-container" style="background:#f2f2f2;">
+    <div class="body-container font-sans" style="background:#f2f2f2;">
         <header class="h-16 bg-teal-800 drop-shadow-lg">
             <div class="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
                 <div class="flex items-center md:hidden">
