@@ -45,7 +45,7 @@ export default {
     
   ],
 
-  //ssr: false,
+  ssr: false,
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
