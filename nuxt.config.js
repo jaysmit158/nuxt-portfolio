@@ -45,6 +45,8 @@ export default {
     
   ],
 
+  ssr: false,
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/tailwindcss'
