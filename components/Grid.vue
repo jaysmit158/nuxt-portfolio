@@ -7,17 +7,17 @@
         class="shadow-lg w-full box bg-white border-solid border border-teal-800 border-2"
       >
         <a :href="item.href" target="_blank">
-          <nuxt-img 
-            v-if="item.img"
-            :src="`/img/${item.img}`"
+          <img 
+            v-if="item.img" 
+            :src="`/img/${item.img}`"  
+            :width="item.type === 'certification' ? '150' : '100%'"
             :alt="item.title"
             :title="item.title"
-            :class="{'setpixel': item.type === 'certification'}"
-            :width="item.type === 'certification' ? '150' : '100%'"
           />
-          <nuxt-img 
-            v-if="!item.img && item.type=='web_app'"
-            src="/img/web-app.jpeg"
+          <img 
+            v-if="!item.img && item.type=='web_app'" 
+            src="/img/web-app.jpeg" 
+            width="100%"
             :alt="item.title"
             :title="item.title"
           />
@@ -68,10 +68,8 @@ export default {
     transition: transform .2s; /* Animation */
     min-height:auto;
   }
+
   .box:hover {
     transform: scale(1.1); 
-  }
-  .setpixel {
-    margin: auto;
   }
 </style>
