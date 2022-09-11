@@ -5,7 +5,7 @@
         <h1 class="text-center text-4xl pt-8 pb-8">Who Am I?</h1>
         <div class="md:flex">
           <div class="flex-none w-full md:w-2/5">
-            <nuxt-img 
+            <img 
               class="profile rounded-md" 
               alt="Jordan Smith"
               title="Jordan S"
@@ -52,7 +52,6 @@
         </div>
       </div>
     </div>
-    <!--<EmailModal v-show="show" @close="closeModal" />-->
   </section>
 </template>
 
