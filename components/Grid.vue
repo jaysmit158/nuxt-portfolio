@@ -7,8 +7,19 @@
         class="shadow-lg w-full box bg-white border-solid border border-teal-800 border-2"
       >
         <a :href="item.href" target="_blank">
-          <img v-if="item.img" :src="`/img/${item.img}`" />
-          <img v-if="!item.img && item.type=='web_app'" src="/img/web-app.jpeg" />
+          <nuxt-img 
+            v-if="item.img"
+            :src="`/img/${item.img}`"
+            :alt="item.title"
+            :title="item.title"
+            :width="item.type === 'certification' ? '150' : '100%'"
+          />
+          <nuxt-img 
+            v-if="!item.img && item.type=='web_app'"
+            src="/img/web-app.jpeg"
+            :alt="item.title"
+            :title="item.title"
+          />
           <h4>{{ item.title }}</h4>
           <h4 v-if="item.type" class="capitalize">Project Type: {{ convert(item.type) }}</h4>
           <h4 v-if="item.id" class="capitalize"> Verification Id: {{ item.id }}</h4>
