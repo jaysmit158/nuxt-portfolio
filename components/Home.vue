@@ -9,7 +9,7 @@
               class="profile rounded-md" 
               alt="Jordan Smith"
               title="Jordan S"
-              src="/img/me.jpg" 
+              src="/img/me.webp" 
               height="325" 
               width="225" 
             />
