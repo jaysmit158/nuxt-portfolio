@@ -15,14 +15,14 @@
             :title="item.title"
             :width="item.type === 'certification' ? '150' : '509'"
             :height="item.type === 'certification' ? '150': '363'"
-            
           />
           <img 
             v-if="!item.img && item.type=='web_app'" 
-            src="/img/web-app.webp" 
-            width="100%"
+            src="/img/web-app.webp"
             :alt="item.title"
             :title="item.title"
+            width="509"
+            height="363"
           />
           <h4 class="px-1">{{ item.title }}</h4>
           <h4 v-if="item.type" class="capitalize px-1">Project Type: {{ convert(item.type) }}</h4>
