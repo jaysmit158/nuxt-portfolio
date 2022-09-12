@@ -41,7 +41,9 @@
                   icon="fa-brands fa-github" 
                 />
               </a>
-              <a href="mailto:jaysmit158@gmail.com">
+              <a 
+                aria-label="Send me an Email"
+                href="mailto:jaysmit158@gmail.com">
                 <font-awesome-icon 
                   class="text-5xl pr-4 text-teal-800" 
                   icon="fa-solid fa-envelope"
