@@ -10,10 +10,12 @@
           <img 
             v-if="item.img" 
             :class="{'setPixel': item.type === 'certification'}"
-            :src="`/img/${item.img}.webp`"  
-            :width="item.type === 'certification' ? '150' : '100%'"
+            :src="`/img/${item.img}.webp`"
             :alt="item.title"
             :title="item.title"
+            :width="item.type === 'certification' ? '150' : '509'"
+            :height="item.type === 'certification' ? '150': '363'"
+            
           />
           <img 
             v-if="!item.img && item.type=='web_app'" 
