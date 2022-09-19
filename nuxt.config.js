@@ -14,7 +14,11 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      //homepage
+      { rel: 'preload', fetchpriority: 'high', as: 'image', href: '/img/me.webp', type: 'image/webp' },
+      //portfolio
+      { rel: 'preload', fetchpriority: 'high', as: 'image', href: '/img/aws-certified-cloud-practitioner.webp', type: 'image/webp' }
     ]
   },
 
