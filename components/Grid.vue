@@ -18,7 +18,8 @@
             :height="item.type === 'certification' ? '150': '363'"
           />
           <img 
-            v-if="!item.img && item.type=='web_app'" 
+            v-if="!item.img && item.type=='web_app'"
+            :fetchpriority="item.id < 2 ? 'high' : 'low'"
             src="/img/web-app.webp"
             :alt="item.title"
             :title="item.title"
