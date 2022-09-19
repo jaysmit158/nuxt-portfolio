@@ -19,7 +19,7 @@ export default {
       //homepage
       { rel: 'preload', fetchpriority: 'high', as: 'image', href: '/img/me.webp', type: 'image/webp' },
       //portfolio
-      { rel: 'preload', fetchpriority: 'high', as: 'image', href: '/img/aws-certified-cloud-practitioner.webp', type: 'image/webp' }
+      { rel: 'preload', fetchpriority: 'high', as: 'image', href: '/img/aws-certified-cloud-practitioner.webp', type: 'image/webp' },
       { rel: 'preload', fetchpriority: 'high', as: 'image', href: '/img/web-app.webp', type: 'image/webp' }
     ]
   },
