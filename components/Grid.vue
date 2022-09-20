@@ -11,6 +11,7 @@
           <img 
             v-if="item.img"
             :fetchpriority="item.id < 2 ? 'high' : 'low'"
+            :loading="item.id < 2 ? 'eager' : 'lazy'"
             :class="{'setPixel': item.type === 'certification'}"
             :src="`/img/${item.img}.webp`"
             :alt="item.title"
@@ -21,6 +22,7 @@
           <img 
             v-if="!item.img && item.type=='web_app'"
             :fetchpriority="item.id < 2 ? 'high' : 'low'"
+            :loading="item.id < 2 ? 'eager' : 'lazy'"
             src="/img/web-app.webp"
             :alt="item.title"
             :title="item.title"
