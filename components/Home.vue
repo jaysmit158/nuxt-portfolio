@@ -15,7 +15,7 @@
               width="225" 
             />
           </div>
-          <div class="flex-none md:w-3/5 text-xl m-8 md:m-0">
+          <div class="flex-none md:w-3/5 text-xl m-8 md:m-0 lg:px-3">
             <p class="mb-4"> Hello, My name is Jordan Smith.</p>
             <p class="my-4">I am a Software Engineer with a focus on the front end and working knowledge of the back end.</p>
             <p class="my-4">I currently build web based applications using  VueJS/Nuxt as a Javascript Framework, PHP, and Cloud Services (AWS, Google Cloud).</p>
