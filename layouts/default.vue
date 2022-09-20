@@ -2,7 +2,7 @@
 <template>
     <div class="body-container font-sans" style="background:#f2f2f2;">
         <header class="h-16 bg-teal-800 drop-shadow-lg">
-            <div class="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
+            <div class="container max-w-screen-xl px-4 md:px-0 h-full mx-auto flex justify-between items-center">
                 <div class="flex items-center md:hidden">
                     <button class="text-white text-4xl font-bold opacity-70 hover:opacity-100 duration-300"
                         @click="toggleMenu">
@@ -18,10 +18,10 @@
                         <button class="text-right text-white text-4xl" @click="toggleMenu">&times;</button>
                     </li>
                     <li>
-                        <NuxtLink to="/" class="text-white opacity-70 hover:opacity-100 duration-300">Home</NuxtLink>
+                        <NuxtLink to="/" class="text-white text-2xl opacity-70 hover:opacity-100 duration-300 py-2.5 block">Home</NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="/portfolio" class="text-white opacity-70 hover:opacity-100 duration-300">Portfolio</NuxtLink>
+                        <NuxtLink to="/portfolio" class="text-white text-2xl opacity-70 hover:opacity-100 duration-300 py-2.5 block">Portfolio</NuxtLink>
                     </li>
                 </ul>
             </div>

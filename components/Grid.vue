@@ -1,5 +1,6 @@
 <template>
   <section class="p-8 m-auto max-w-screen-xl font-sans">
+    <h3 class="text-xl mb-6">This is not a complete list of all projects I have worked on but is a mix of web apps, e-commerce websites, and static sites.</h3>
     <div class="grid grid-cols-1 md:grid-cols-4 place-content-evenly gap-8">
       <div
         :key="item.id"
